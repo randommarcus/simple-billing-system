@@ -18,10 +18,13 @@ def apply_discount(subtotal):
     """
     if subtotal >= 1000:
         discount = subtotal * 0.10
+        discount_label = "10% Discount Applied"
     elif subtotal >= 500:
         discount = subtotal * 0.05
+        discount_label = "5% Discount Applied"
     else:
         discount = 0
+        discount_label = "No Discount"
 
     final_total = subtotal - discount
-    return discount, final_total
+    return discount, final_total, discount_label
