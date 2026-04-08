@@ -1,43 +1,45 @@
-# Simple Billing System (Python)
+# 🧾 Simple Billing System (Streamlit Web App)
 
-A beginner-friendly Python billing system for a shop/store that allows users to enter product details, calculate totals, apply discounts, and print a final invoice.
+A Python-based billing system for a shop/store built using Streamlit.  
+This app allows users to enter customer and product details, calculate total bills, apply discounts, preview invoices, and download them.
 
-## Features
+## 🚀 Features
 
-- Add multiple products
 - Enter customer name
-- Auto-generate invoice number
-- Capture date and time of billing
-- Enter product name, price, and quantity
+- Add multiple products
+- Input price and quantity
 - Automatic subtotal calculation
-- Conditional discount application
-- Clean invoice display in terminal
-- Save invoice as `.txt` file
-- Input validation for better usability
+- Discount rules based on bill amount
+- Invoice number generation
+- Date & time stamp
+- Invoice preview
+- Download invoice as `.txt`
+- Clean browser-based UI using Streamlit
 
-## Discount Rules
+## 💸 Discount Rules
 
 - 10% discount if subtotal >= ₹1000
 - 5% discount if subtotal >= ₹500
 - No discount below ₹500
 
-## Future Improvements
+## 🛠 Tech Stack
 
-- GUI using Tkinter
-- Web app using Streamlit
-- GST/tax calculation
-- Product code support
-- PDF invoice generation
-- Database integration
+- Python
+- Streamlit
+- Pandas
+- Git
+- GitHub
 
-## Project Structure
+## 📂 Project Structure
 
 ```bash
 simple-billing-system/
 │
-├── main.py          # Main program
-├── bill_logic.py    # Billing calculations
-├── invoice.py       # Invoice printing
+├── app.py
+├── bill_logic.py
+├── invoice.py
+├── utils.py
+├── invoices/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
