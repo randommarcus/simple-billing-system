@@ -25,10 +25,6 @@ def generate_invoice_text(customer_name, invoice_number, bill_datetime, products
     return "\n".join(lines)
 
 
-def print_invoice(invoice_text):
-    print("\n" + invoice_text)
-
-
 def save_invoice_to_file(invoice_number, invoice_text):
     file_path = f"invoices/{invoice_number}.txt"
     with open(file_path, "w", encoding="utf-8") as file:
